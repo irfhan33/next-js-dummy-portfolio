@@ -13,7 +13,7 @@ export default function Contact() {
       <section className="hero">
         <div className="container about">
           <div className="text-wrapper w-full">
-            <h1 className="title">Contact</h1>
+            <h1 className="title">Cotaaact</h1>
             <p className="description">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.

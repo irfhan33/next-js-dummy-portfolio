@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+}
+
+.nav-item {
+  color: black;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.nav {
+  margin-top: 10px;
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav__logo {
+    font-weight: 700;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-decoration: none;
+  }
+
+  .nav__links {
+    display: flex;
+    margin-left: auto;
+    list-style: none;
+
+    .nav__item {
+      display: inline-block;
+      margin: 0 20px;
+      text-decoration: none;
+      transition: all 0.2s;
+      position: relative;
+      color: black;
+
+      &.active {
+        font-weight: 700;
+
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          width: 25px;
+          height: 2px;
+          background-color: black;
+        }
+      }
+
+      &:hover:not(.active) {
+        color: aqua;
+      }
+    }
+  }
+}
+
+.hero {
+  .container {
+    display: flex;
+    align-items: center;
+
+    &.about {
+      padding-top: 30px;
+    }
+
+    .text-wrapper {
+      width: 50%;
+
+      &.w-full {
+        width: 100%;
+      }
+
+      .title {
+        font-size: 54px;
+        margin: 0;
+      }
+
+      .description {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 36px;
+      }
+
+      .cta {
+        display: inline-block;
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        padding: 10px 30px;
+        border-radius: 5px;
+        transition: transform 0.1s;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .image-wrapper {
+      width: 50%;
+      text-align: right;
+    }
+  }
+}
+
+.portfolio-wrapper {
+  display: flex;
+  margin: 0 -10px;
+
+  .portfolio-item {
+    width: 50%;
+    padding: 0 10px;
+    text-align: center;
+
+    .portfolio-title {
+      margin: 6px 0;
+      font-size: 20px;
+    }
+
+    .portfolio-category {
+      margin: 0;
+      font-size: 18px;
+      color: darkgrey;
+    }
+    .portfolio-image {
+      max-width: 100%;
+    }
+  }
+}

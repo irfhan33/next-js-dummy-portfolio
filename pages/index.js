@@ -14,7 +14,7 @@ export default function Home() {
       <section className="hero">
         <div className="container">
           <div className="text-wrapper">
-            <h1 className="title">Halo, saya Irfan Muhammad</h1>
+            <h1 className="title">Updated At VS CODE and Github</h1>
             <p className="description">
               Saya seorang pekerja lepas pengembang web, fotograper, desainer
               antarmuka pengguna, dan penulis
